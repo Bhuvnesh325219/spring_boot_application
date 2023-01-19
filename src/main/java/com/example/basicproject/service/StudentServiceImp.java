@@ -18,6 +18,7 @@ public class StudentServiceImp  implements StudentService{
 	@Override
 	public Student saveStudent(Student student) {
 		// TODO Auto-generated method stub
+		
 		return studentRepo.save(student);
 	}
 
@@ -25,7 +26,10 @@ public class StudentServiceImp  implements StudentService{
 	public List<Student> getAllStudents() {
 		// TODO Auto-generated method stub
 		return studentRepo.findAll();
+		
 	}
+
+	
 	
 	
 
